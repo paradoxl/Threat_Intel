@@ -38,12 +38,12 @@
   <main class="container">
     <section class="hero" aria-labelledby="heroTitle">
       <div class="wrap">
-        <div>
+        <div class="copy reveal observe" style="--delay: 0.05s">
           <span class="pill">Dark • Minimal • Accessible</span>
           <h1 id="heroTitle">Ship your cybersecurity blog fast—no build tools required</h1>
           <p>Plain HTML, modern CSS, and a few lines of JavaScript. Use this as a baseline for threat intel briefs, deep-dives, and tooling walkthroughs.</p>
         </div>
-        <div class="panel">
+        <div class="panel reveal observe" style="--delay: 0.2s">
           <pre aria-label="Sample code block"><code>// Example: simple IOC highlighter
 const iocRegex = /\b([0-9]{1,3}\.){3}[0-9]{1,3}\b|[a-f0-9]{32,64}/ig;
 const highlighted = text.replace(iocRegex, m => `<mark class="pill">${m}</mark>`);
@@ -56,7 +56,7 @@ const highlighted = text.replace(iocRegex, m => `<mark class="pill">${m}</mark>`
       <section aria-labelledby="latestPosts">
         <h2 id="latestPosts" class="muted">Latest posts</h2>
         <div class="posts" id="postGrid">
-          <article class="card" data-tags="pegasus mobile ios spyware zero-click" data-title="Pegasus: Anatomy of a Zero-Click Chain">
+          <article class="card observe reveal" data-tags="pegasus mobile ios spyware zero-click" data-title="Pegasus: Anatomy of a Zero-Click Chain">
             <div class="thumb" role="img"></div>
             <div class="content">
               <div class="meta"><time datetime="2025-09-10">Sep 10, 2025</time> • 9 min read</div>
@@ -69,7 +69,7 @@ const highlighted = text.replace(iocRegex, m => `<mark class="pill">${m}</mark>`
       </section>
 
       <aside aria-label="Sidebar">
-        <section class="widget newsletter">
+        <section class="widget newsletter observe reveal" style="--delay: 0.35s">
           <h3>Newsletter</h3>
           <p class="hint">No spam. Just threat intel and practical hardening tips.</p>
           <form onsubmit="event.preventDefault(); alert('Pretend we saved your email 🤝');">
