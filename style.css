@@ -1,0 +1,32 @@
+/* Basic dark theme styling */
+:root {
+  --bg: #0b0f14;
+  --surface: #121822;
+  --text: #e6edf3;
+  --muted: #9fb0c0;
+  --accent: #00d1b2;
+  --font-sans: "Inter", system-ui;
+}
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  margin: 0;
+}
+header {
+  background: var(--surface);
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+}
+.container { width: 90%; margin: auto; }
+.nav { display: flex; justify-content: space-between; align-items: center; }
+.nav-links a { color: var(--muted); margin-right: 1rem; text-decoration: none; }
+.nav-links a:hover { color: var(--text); }
+.hero { padding: 2rem 0; }
+.posts { display: grid; gap: 1rem; }
+.card { background: var(--surface); padding: 1rem; border-radius: 8px; }
+.footer { border-top: 1px solid #333; padding-top: 1rem; margin-top: 1rem; }
+.btn { background: var(--surface); color: var(--text); border: none; padding: 0.5rem 1rem; cursor: pointer; }
+.btn:hover { background: #1a2230; }

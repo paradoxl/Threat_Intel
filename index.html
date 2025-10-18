@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CyberSec Blog – Dark Starter</title>
+  <meta name="description" content="A minimal, dark-themed cybersecurity blog starter." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container nav" role="navigation" aria-label="Primary">
+      <a class="brand" href="#" aria-label="Homepage">
+        <span class="logo" aria-hidden="true"></span>
+        <span>CyberSec Blog</span>
+      </a>
+      <button class="btn menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="primaryLinks">☰ Menu</button>
+      <nav class="nav-links" id="primaryLinks">
+        <a href="#">Home</a>
+        <a href="#">Threat Intel</a>
+        <a href="#">Guides</a>
+        <a href="#">Tools</a>
+        <a href="#">About</a>
+      </nav>
+      <div class="searchbar" role="search">
+        <input id="search" type="search" placeholder="Search posts (e.g., Pegasus, C2, Wazuh)" aria-label="Search posts" />
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 21l-4.35-4.35M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </div>
+      <div class="actions">
+        <button class="btn" id="themeBtn" title="Toggle theme" aria-label="Toggle theme">🌓</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="wrap">
+        <div>
+          <span class="pill">Dark • Minimal • Accessible</span>
+          <h1 id="heroTitle">Ship your cybersecurity blog fast—no build tools required</h1>
+          <p>Plain HTML, modern CSS, and a few lines of JavaScript. Use this as a baseline for threat intel briefs, deep-dives, and tooling walkthroughs.</p>
+        </div>
+        <div class="panel">
+          <pre aria-label="Sample code block"><code>// Example: simple IOC highlighter
+const iocRegex = /\b([0-9]{1,3}\.){3}[0-9]{1,3}\b|[a-f0-9]{32,64}/ig;
+const highlighted = text.replace(iocRegex, m => `<mark class="pill">${m}</mark>`);
+</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <div class="grid" aria-label="Content layout">
+      <section aria-labelledby="latestPosts">
+        <h2 id="latestPosts" class="muted">Latest posts</h2>
+        <div class="posts" id="postGrid">
+          <article class="card" data-tags="pegasus mobile ios spyware zero-click" data-title="Pegasus: Anatomy of a Zero-Click Chain">
+            <div class="thumb" role="img"></div>
+            <div class="content">
+              <div class="meta"><time datetime="2025-09-10">Sep 10, 2025</time> • 9 min read</div>
+              <h3 class="title"><a href="#">Pegasus: Anatomy of a Zero-Click Chain</a></h3>
+              <p class="excerpt">Walkthrough of a crash-based infection vector, from malformed image assets to sandbox escape and persistence hardening.</p>
+            </div>
+            <div class="footer"><span class="muted">By Ops Team</span><a href="#">Read →</a></div>
+          </article>
+        </div>
+      </section>
+
+      <aside aria-label="Sidebar">
+        <section class="widget newsletter">
+          <h3>Newsletter</h3>
+          <p class="hint">No spam. Just threat intel and practical hardening tips.</p>
+          <form onsubmit="event.preventDefault(); alert('Pretend we saved your email 🤝');">
+            <label class="sr-only" for="email">Email</label>
+            <input id="email" type="email" placeholder="you@company.com" required>
+            <button class="btn" type="submit">Subscribe</button>
+          </form>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container foot">
+      <p>© <span id="year"></span> CyberSec Blog. Stay patched, stay curious.</p>
+      <nav class="row" aria-label="Footer">
+        <a href="#">RSS</a>
+        <a href="#">Privacy</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
