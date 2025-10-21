@@ -110,10 +110,15 @@ header::after {
 }
 
 .logo {
-  width: 36px;
-  height: 36px;
-  border-radius: 12px;
-  background: conic-gradient(from 210deg, var(--accent) 0%, rgba(0, 209, 178, 0.2) 55%, rgba(0, 149, 255, 0.4) 100%);
+  width: 40px;
+  height: 50px;
+}
+.port{
+  width: 350px;
+  height: 350px;
+}
+  /* border-radius: 12px;
+  background: conic-gradient(from 210deg, var(--accent) 0%, rgba(0, 0, 0, 0.2) 55%, rgba(0, 149, 255, 0.4) 100%);
   box-shadow: 0 0 18px var(--glow);
   position: relative;
   overflow: hidden;
@@ -123,10 +128,10 @@ header::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(130deg, rgba(255, 255, 255, 0.38), transparent 60%);
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.38), transparent 60%);
   transform: translateX(-100%);
-  animation: shimmer 4s ease-in-out infinite;
-}
+  animation: shimmer 3s ease-in-out infinite;
+} */
 
 .nav-links {
   display: flex;
