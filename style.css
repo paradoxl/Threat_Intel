@@ -370,8 +370,8 @@ pre::after {
 }
 
 .card .thumb {
-  height: 150px;
-  border-radius: 100px;
+  height: 350px;
+  border-radius: 0px;
   background: linear-gradient(135deg, rgba(0, 209, 178, 0.28), rgba(0, 149, 255, 0.22));
   position: relative;
   overflow: hidden;
